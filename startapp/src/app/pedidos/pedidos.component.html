@@ -1,0 +1,12 @@
+<div *ngIf="filtroPedidos" >
+    <div *ngFor="let pedido of filtroPedidos">
+    <div>
+        {{pedido.pedido_id}}
+    </div>
+    <div>
+        {{pedido.descricao}}
+    </div>
+    <div *ngFor="let mala of pedido.malas">
+        {{mala}}
+    </div>
+</div>   

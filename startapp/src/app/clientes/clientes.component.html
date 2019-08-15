@@ -1,0 +1,17 @@
+<div *ngFor="let cliente of clientes" >
+    <div>
+        {{cliente.nome}}
+    </div>
+    <div>
+        {{cliente.telefone}}
+    </div>
+    <div>
+        {{cliente.endereco}}
+    </div>
+    <a *ngFor="let pedido of cliente.pedidos" routerLink="/pedidos/{{pedido}}">
+        {{pedido}}
+    </a>
+           
+</div>   
+
+
